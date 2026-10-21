@@ -1,0 +1,4 @@
+# Repository administration files stay in the development source.
+/README.md
+/.gitignore
+/.skill-publish-ignore
