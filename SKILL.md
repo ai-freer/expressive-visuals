@@ -1,44 +1,51 @@
 ---
 name: expressive-visuals
-description: 为以视觉表达为核心的作品（网页、交互作品、3D 场景与模型、图像、视频、动画等）提供开放的创作提醒，从原著、资料或概念中的价值、世界观、关系与意境出发寻找表达方向，并落实为可感知的形式与观看体验。适用于构思、制作、改进或评审，也适用于按定稿效果图重建三维资产、场景及诊断还原差距；常规界面维护和纯技术修复通常无需使用。
+description: Creative guidance for work whose value is primarily visual and experiential, including web pages, interactive pieces, 3D scenes and models, images, video, and animation. Use when conceiving, making, improving, or reviewing such work from source material, references, or concepts, and when rebuilding 3D assets or scenes from approved concept art or diagnosing why a render does not match it. Usually unnecessary for routine UI maintenance or purely technical fixes.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
-# 表现力与意境
+# Expressive Visuals
 
-理解值得传递的内容，为它寻找合适的形式，并安排观众与它相遇的方式，让作品成为可感知、可理解、有余味的经验。表达从对内容的理解与取舍中生长；制作和实际观看，也可以反过来带来新的理解。
+Aim to make the work a perceptible, understandable experience with lingering resonance. Understand what is worth conveying, find a form that carries it, and design how the viewer encounters it. Expression grows from understanding and selection; making and viewing the actual work can also revise that understanding.
 
-先判断参考图在任务中的作用。若用户要从参考中发展新的表达，按下文的开放问题取舍。若用户要求按定稿图重建三维资产或场景，或诊断渲染为何不像原图，读[三维还原方法](references/concept-to-3d.md)：保留定稿中已确定的关系，在实际观看条件下探索实现路线。
+## First, classify the role of the reference
 
-当两种做法在眼前看起来都成立时，找一个能让它们呈现不同结果的观看条件，再用实际作品决定取舍。
+- **Reference as inspiration** — the user wants a new expression developed from source material or references. Use the prompts below to choose what to convey and how.
+- **Reference as specification** — the user wants an approved concept rebuilt in 3D, or wants to know why a render does not look like it. Read [3D Reconstruction from Concept Art](references/concept-to-3d.md). Preserve what the approved image already decides, and search for an implementation that holds under the real viewing conditions.
 
-表现力是形式让内容中的性质、关系、情绪与张力被感知的能力。意境是内容、形式与观看共同形成的整体体验，使观众从具体呈现中感到某种处境、气质或意味，并产生联想与余味。
+When two approaches both look plausible, find a viewing condition under which they produce different results, then decide with the actual work.
 
-借用“信达雅”：忠实于内容与用途，让关键意义在观看中可理解，让形式产生恰当而独特的感染力。三者相互作用。意境可以来自明亮、严峻、日常、荒诞，也可以来自理解一个机制时的惊奇；由题材决定表达的气质。
+## Working definitions
 
-以下是一张供创作时回看的思考提示单，沿内容、形式与观看三个方面提醒你看见可以主动设计的地方。根据作品需要选用、组合、弱化或重新理解它们，也可以寻找这里没有列出的方式；无需按顺序执行、逐项作答或全部覆盖，也不必额外输出一份分析文档。思考之后，选定最值得被感受的一两点，让它们在具体的形体、空间、光、材质或过程中成立。
+Expressiveness is the capacity of form to make the qualities, relationships, emotions, and tensions in the content perceptible. *Yijing* (意境) is the whole experience that content, form, and viewing produce together: from what is concretely shown, the viewer senses a situation, temperament, or meaning and is left with associations that linger.
 
-- **内容深处，什么值得被传递？** 面对原著、资料、故事或概念，除了人物、物件与事件，还能读出怎样的价值取向、世界观与意境？哪些关系、选择、变化或代价使人产生感受？区分材料明确给出的内容与自己的解释补充；多义、矛盾与未知也可以保留。
+Borrow Yan Fu's translation standard of fidelity, clarity, and elegance (信达雅): be faithful to the content and purpose, make the key meaning legible in viewing, and give the form fitting, distinctive affective power. The three interact. *Yijing* can be bright, severe, everyday, absurd, or the wonder of grasping a mechanism; the subject determines the temperament.
 
-- **从怎样的切入点，让理解成为经验？** 根据用途、观众与媒介，寻找能承载这些意味的情境、动作、形象、空间关系或过程。一段经历、一个姿态、一种环境的回应，甚至一个缺席，都可能成为切入点。可以忠实再现，也可以提炼、重组或象征化；允许不同的理解发展出不同的作品。
+## Prompts to revisit while creating
 
-- **若是系列或成长过程，什么在变化？** 除了数量与强度，身份、身体、作用范围、相互关系或存在方式也可能改变。每条线索可以有自己的变化轴；起点与终点可以互相呼应，也可以形成有意味的转折。
+These prompts span content, form, and viewing, and point to places you can design deliberately. Select, combine, downplay, or reinterpret them, or find approaches not listed. Do not run them in order, answer each one, or produce a separate analysis document. After thinking, choose the one or two things most worth feeling, and make them hold in concrete shape, space, light, material, or process.
 
-- **这件作品适合怎样的视觉语言？** 根据内容、用途与希望形成的感受，考虑写实、概括、夸张或其他艺术表达。形体、光影、色彩、材质、纹理与运动，都可以参与风格的形成。让这些选择建立适合当前作品的联系；协调、反差与混合也可以有各自的意义。相似的符号在不同题材里，也可以通过构成、关系与运动获得各自的性格。
+- **What in the content is worth conveying?** Beyond characters, objects, and events, what values, worldview, and *yijing* can be read in the source? Which relationships, choices, changes, or costs move people? Separate what the material states from your own interpretation; ambiguity, contradiction, and the unknown can stay.
 
-- **什么让这个世界变得可感？** 轮廓、比例、尺度、距离与疏密，怎样呈现关系和处境？姿态、视线、接触与受力，能否让对象之间的联系变得可信？光从哪里来，属于这个世界里的什么？整体照明与局部亮点怎样分出层次，让明与暗各自有意味？材料如何回应环境，纹理如何提示触感与经历，运动如何呈现重量、力量与生命感？留意这些因素的相互作用，让细节增加意义、可信感或发现的乐趣。
+- **What entry point turns understanding into experience?** Given purpose, audience, and medium, look for a situation, action, image, spatial relationship, or process that carries the meaning. An episode, a gesture, an environment's response, or even an absence can serve. Faithful depiction, distillation, recombination, and symbolism are all open; different readings can yield different works.
 
-- **这个处境有怎样的空气？** 环境、雾气、尘埃、远近层次、色温与声音，能否让观众感到身在其中的气氛与情绪？氛围由情境、光、环境与镜头共同形成，留意它们是否指向同一种感受，而不只是局部的渲染效果。
+- **In a series or progression, what changes?** Beyond quantity and intensity, identity, body, range of influence, relationships, or mode of existence can change. Each thread can have its own axis of change; start and end can echo each other or turn meaningfully.
 
-- **什么突出，什么退后？** 关键意义需要怎样的可见度？清晰可以有主次，取舍也能表达。丰富、简化、遮挡与留白各有作用；人物、物件、环境或它们之间的关系，都可能承担表达的中心。让观众的注意力与想象空间符合这件作品的需要。
+- **What visual language fits this work?** Choose among realism, abstraction, exaggeration, or other artistic approaches according to the content, purpose, and intended feeling. Shape, light and shadow, color, material, texture, and motion all shape style. Relate these choices to this work; harmony, contrast, and mixture can each carry meaning. A similar motif can gain its own character in a different subject through composition, relationships, and motion.
 
-- **观众以怎样的关系接触作品？** 观众置身其中、在外观察，或通过行动参与，会形成怎样的位置感？观看的位置、距离、角度、透视与取景，会怎样影响理解和感受？靠近、远望、仰视、穿行或转身，可以形成不同的处境。镜头也在叙述：它先让人看见什么、隐去什么，以怎样的高度与距离面对对象，怎样移动与停留，都在塑造观众与内容的关系；交互同样参与表达。也考虑观众的注意力如何被引导，以及他们保有怎样的探索空间。
+- **What makes this world tangible?** How do silhouette, proportion, scale, distance, and density express relationships and situation? Can posture, gaze, contact, and load make the connections between things believable? Where does the light come from, and what in this world emits it? How do overall illumination and local highlights form layers so that light and dark each mean something? How do materials respond to the environment, how does texture suggest touch and history, and how does motion show weight, force, and life? Watch how these factors interact, so detail adds meaning, credibility, or the pleasure of discovery.
 
-- **感受怎样在时间中形成？** 流动、变形、速度、节奏、停顿与静止，都可以传达性质和情绪。初见、停留与探索之后，作品是否显露新的关系或意味？让运动与观看过程具有适合内容的性格，使局部时刻共同形成体验。
+- **What is the air of this situation?** Can environment, haze, dust, depth layering, color temperature, and sound place the viewer inside a mood? Atmosphere comes from situation, light, environment, and camera together; check that they point to the same feeling rather than reading as an isolated render effect.
 
-- **若有参考作品，它打动人的是什么？** 留意它选择了什么内容、怎样组织关系、如何安排观看，以及形式为何在那个语境中有效；同样留意它的取舍与局限。把这些理解带回当前的题材、用途与条件，发展自己的表达；相近的感染力也可能来自不同的形体、风格与制作方法。
+- **What comes forward, and what recedes?** How visible must the key meaning be? Clarity can have hierarchy, and omission can express. Richness, simplification, occlusion, and empty space each have a role; a figure, an object, the environment, or the relationship between them can carry the center. Fit the viewer's attention and imaginative room to the work.
 
-- **实际作品传达出了什么？** 回到可见的画面与交互，感受注意力落在哪里、哪些关系成立、哪些形式削弱了原意。从初见、局部、全景和交互后的体验，观察内容是否准确、关键意义是否可理解、预期的感染力是否发生。留意局部强化对整体可读性、氛围和连贯性的影响，用观看结果校准创作判断。涉及事实或机制时，也留意艺术化处理是否改变了观众的理解。
+- **How does the viewer relate to the work?** Being inside it, observing from outside, or acting within it each create a sense of position. How do viewpoint, distance, angle, perspective, and framing shape understanding and feeling? Approaching, looking out, looking up, passing through, or turning around create different situations. The camera also narrates: what it reveals first, what it withholds, its height and distance from the subject, and how it moves and pauses all shape the viewer's relationship to the content. Interaction expresses too. Consider how attention is guided and how much room for exploration the viewer keeps.
 
-这些问题指向适合当前作品的表达，没有统一的视觉答案。沿用用户的用途、风格与技术选择，在任务允许的空间里发挥判断，并让判断落到可见的结果上。
+- **How does feeling form over time?** Flow, deformation, speed, rhythm, pause, and stillness can convey qualities and emotion. After first sight, lingering, and exploration, does the work reveal new relationships or meanings? Give motion and the viewing process a character that suits the content, so individual moments add up to an experience.
+
+- **If there is a reference work, what makes it move people?** Notice what content it chose, how it organized relationships, how it staged viewing, and why its form worked in that context; notice its trade-offs and limits too. Bring that understanding back to the current subject, purpose, and constraints to develop your own expression. Similar affective power can come from different shapes, styles, and methods.
+
+- **What does the actual work convey?** Return to the visible frames and interactions. Notice where attention lands, which relationships hold, and which forms weaken the intent. From first sight, close detail, the full view, and after interaction, check whether the content is accurate, the key meaning is legible, and the intended effect happens. Watch whether local enhancement hurts overall readability, atmosphere, or coherence, and calibrate judgment by what viewing shows. For facts or mechanisms, check whether artistic treatment changes what the viewer understands.
+
+These prompts point toward an expression that fits the current work; there is no single visual answer. Follow the user's purpose, style, and technical choices, exercise judgment within the space the task allows, and land that judgment in visible results.

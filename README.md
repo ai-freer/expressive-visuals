@@ -1,17 +1,19 @@
-# 表现力与意境 · Expressive Visuals
+# Expressive Visuals
 
-用于以视觉表达为核心的作品（网页、交互作品、3D 场景与模型、图像、视频、动画等）的启发式创作 Skill。
+[English](README.md) | [中文](README_CN.md)
 
-沿内容、形式与观看三个方面提示：从原著、资料或概念中的价值、世界观、关系与意境出发，寻找表达的切入点与变化轴，再考虑艺术风格、形态与空间、光影与氛围、镜头语言、注意力、观看关系和时间体验，最后让判断落到可见的结果上。参考研究与实际观看也可以带来新的理解。
+A heuristic creative skill for work whose value is primarily visual: web pages, interactive pieces, 3D scenes and models, images, video, and animation.
 
-这些开放问题用于拓宽创作选择。按任务选用，无需逐项回答、全部覆盖或额外提交分析文档；保留模型自身的理解与创作判断，不预设统一风格或模型专属方法。
+It prompts across content, form, and viewing. Start from the values, worldview, relationships, and *yijing* (意境, the lingering mood a work evokes) in the source material or concept; find an entry point and axes of change; then consider visual language, shape and space, light and atmosphere, camera, attention, the viewer's relationship to the work, and how experience unfolds over time. Finally, land the judgment in visible results. Reference study and viewing the actual work can also deepen understanding.
 
-入口见 [SKILL.md](SKILL.md)。需要忠实还原定稿效果图时，使用同一技能中的[三维还原方法](references/concept-to-3d.md)。它涵盖受控对照、换路条件与完整交付；跨风格迁移能力仍待陌生参考图独立验证。
+These open prompts widen creative choices. Use them as the task requires; there is no need to answer each one, cover them all, or submit a separate analysis document. They preserve the model's own understanding and creative judgment and do not prescribe a single style or model-specific method.
 
-## 使用
+The entry point is [SKILL.md](SKILL.md). To faithfully rebuild approved concept art, use [3D Reconstruction from Concept Art](references/concept-to-3d.md) in the same skill. It covers controlled comparisons, conditions for changing route, and complete delivery. Cross-style transfer still needs independent validation on unfamiliar concepts.
 
-将本仓库作为 `expressive-visuals` 技能目录安装到支持 `SKILL.md` 的客户端。在支持按名称调用的客户端中，可用 `$expressive-visuals`。具体发现与加载方式由客户端决定。
+## Usage
 
-当前版本：1.4.0。
+Install this repository as the `expressive-visuals` skill directory in any client that supports `SKILL.md`. In clients that support invocation by name, use `$expressive-visuals`. Discovery and loading depend on the client.
 
-许可证：[MIT](LICENSE)。
+Current version: 1.5.0.
+
+License: [MIT](LICENSE).
