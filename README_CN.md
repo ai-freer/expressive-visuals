@@ -14,6 +14,6 @@
 
 将本仓库作为 `expressive-visuals` 技能目录安装到支持 `SKILL.md` 的客户端。在支持按名称调用的客户端中，可用 `$expressive-visuals`。具体发现与加载方式由客户端决定。
 
-当前版本：1.5.0。
+当前版本：1.5.1。
 
 许可证：[MIT](LICENSE)。
