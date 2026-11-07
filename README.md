@@ -14,6 +14,6 @@ The entry point is [SKILL.md](SKILL.md). To faithfully rebuild approved concept 
 
 Install this repository as the `expressive-visuals` skill directory in any client that supports `SKILL.md`. In clients that support invocation by name, use `$expressive-visuals`. Discovery and loading depend on the client.
 
-Current version: 1.5.1.
+Current version: 1.5.2.
 
 License: [MIT](LICENSE).
