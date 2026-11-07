@@ -18,6 +18,6 @@ Cross-style transfer remains unproven. An informative trial uses an unfamiliar c
 
 Install this repository as the `expressive-visuals` skill directory in any client that supports `SKILL.md`. In clients that support invocation by name, use `$expressive-visuals`. Discovery and loading depend on the client.
 
-Current version: 1.5.4.
+Current version: 1.5.5.
 
 License: [MIT](LICENSE).

@@ -2,7 +2,7 @@
 name: expressive-visuals
 description: Creative guidance for work whose value is primarily visual and experiential, including web pages, interactive pieces, 3D scenes and models, images, video, and animation. Use when conceiving, making, improving, or reviewing such work from source material, references, or concepts, and when rebuilding 3D assets or scenes from approved concept art or diagnosing why a render does not match it. Usually unnecessary for routine UI maintenance or purely technical fixes.
 metadata:
-  version: "1.5.4"
+  version: "1.5.5"
 ---
 
 # Expressive Visuals
