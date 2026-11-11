@@ -1,18 +1,23 @@
 ---
 name: expressive-visuals
-description: Creative guidance for work whose value is primarily visual and experiential, including web pages, interactive pieces, 3D scenes and models, images, video, and animation. Use when conceiving, making, improving, or reviewing such work from source material, references, or concepts, and when rebuilding 3D assets or scenes from approved concept art or diagnosing why a render does not match it. Usually unnecessary for routine UI maintenance or purely technical fixes.
+description: Creative guidance for work whose value is primarily visual and experiential, including web pages, interactive pieces, 3D scenes and models, images, video, and animation. Use when conceiving, making, improving, or reviewing such work from source material, references, or concepts, and when rebuilding 3D assets or scenes from approved concept art or diagnosing why a render does not match it. Also covers modeling individual 3D forms, reconstructing scenes, and building original worlds through code, with Three.js as the main modeling and staging tool in this approach. Usually unnecessary for routine UI maintenance or purely technical fixes.
 metadata:
-  version: "1.5.5"
+  version: "1.6.0"
 ---
 
 # Expressive Visuals
 
 Aim to make the work a perceptible, understandable experience with lingering resonance. Understand what is worth conveying, find a form that carries it, and design how the viewer encounters it. Expression grows from understanding and selection; making and viewing the actual work can also revise that understanding.
 
-## First, classify the role of the reference
+## Choosing a 3D approach
 
-- **Reference as inspiration** — the user wants a new expression developed from source material or references. Use the prompts below to choose what to convey and how.
-- **Reference as specification** — the user wants an approved concept rebuilt in 3D, or wants to know why a render does not look like it. Read [3D Reconstruction from Concept Art](references/concept-to-3d.md). Preserve what the approved image already decides, and search for an implementation that holds under the real viewing conditions.
+A reference offered as inspiration leaves room to invent; an image approved as a target settles visual decisions. The role of the image determines what to preserve. The task and deliverable determine how to build it.
+
+- **Match or diagnose a reference.** Use [3D Reconstruction from Concept Art](references/concept-to-3d.md) on its own to plan a reconstruction in the chosen tool or work out why a render misses an approved image. Compare framing, proportions, occlusion, and light in the intended view. A Blender scene can stay in Blender for that investigation.
+- **Model or compose through code.** Use [Code-driven 3D](references/code-driven-3d.md) on its own for an original object, still, environment, or game. When the choice of tool is open, try Three.js early: shape the subject, view it under the intended light, then change one relationship that matters to the work. A one-off form or a single final frame can justify that study.
+- **Rebuild or repair through code.** Use both guides when building or correcting a model or scene in code against an approved image. Use the first to identify what the target view requires, the second to choose what to model or change. Return to that view to judge the result.
+
+Let the hardest part of the brief guide the next step. A face that must deform convincingly may benefit from an authored rig; a particular brush mark may be easiest to keep as painted; a still that depends on multiple light bounces may merit an offline render. If the handoff requires an editable Blender scene, plan for that source from the outset. Any of these choices can apply to one part of a larger Three.js work.
 
 When two approaches both look plausible, find a viewing condition under which they produce different results, then decide with the actual work.
 

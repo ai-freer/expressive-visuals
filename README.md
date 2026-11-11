@@ -8,7 +8,9 @@ It prompts across content, form, and viewing. Start from the values, worldview, 
 
 These open prompts widen creative choices. Use them as the task requires; there is no need to answer each one, cover them all, or submit a separate analysis document. They preserve the model's own understanding and creative judgment and do not prescribe a single style or model-specific method.
 
-The entry point is [SKILL.md](SKILL.md). To faithfully rebuild approved concept art, use [3D Reconstruction from Concept Art](references/concept-to-3d.md) in the same skill. It covers camera and structure diagnosis, visual mechanisms, controlled comparisons, and integrated evidence under the intended viewing conditions.
+[SKILL.md](SKILL.md) explains when to use each 3D guide. Use [3D Reconstruction from Concept Art](references/concept-to-3d.md) to identify what an approved image requires or why a render misses it. Use [Code-driven 3D](references/code-driven-3d.md) to model a subject or compose an original scene, including a one-off form or a still. Three.js is the main tool for this route. Read both when using code to build or correct a model or scene against an approved image.
+
+The code guide shows how to keep parts connected as dimensions change, combine generated and authored assets under the same light, and let the intended view determine which details need modeling. For moving work, it also shows how to tie visible feedback to the moment and place of contact.
 
 ## Evaluating transfer
 
@@ -18,6 +20,6 @@ Cross-style transfer remains unproven. An informative trial uses an unfamiliar c
 
 Install this repository as the `expressive-visuals` skill directory in any client that supports `SKILL.md`. In clients that support invocation by name, use `$expressive-visuals`. Discovery and loading depend on the client.
 
-Current version: 1.5.5.
+Current version: 1.6.0.
 
 License: [MIT](LICENSE).

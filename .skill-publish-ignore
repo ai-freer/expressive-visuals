@@ -1,5 +1,6 @@
-# Repository administration files stay in the development source.
+# Repository documentation and case research stay in the development source.
 /README.md
 /README_CN.md
 /.gitignore
 /.skill-publish-ignore
+/research/

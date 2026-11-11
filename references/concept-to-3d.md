@@ -18,6 +18,8 @@ Patterns of landmark error help locate a cause, without proving it. Similar disp
 
 Measured relationships become editable constraints through parameters that can explain them. A landmark pair may constrain a projected span, while an occlusion boundary constrains which part appears in front. Separating observations from inferred dimensions keeps camera and geometry hypotheses revisable. Shared guides help related parts retain connections, support, and alignment as they change. Dependencies still matter: increasing a beam's thickness can close a formerly valid clearance, and changing a curved path can make repeated parts intersect. Real construction references help explain unfamiliar joints without overriding intentional stylization in the concept.
 
+When code is a candidate for the reconstruction, [Code-driven 3D](code-driven-3d.md) explores how to turn observed contours, volumes, and spatial relationships into editable geometry, materials, and light.
+
 Physical connection and visual readability are separate claims. Geometry inspection can establish contact; the target view establishes apparent scale, depth, and separation. A connected joint can disappear into shadow, while a projected overlap can conceal a disconnected support. For example, if a roof seems too heavy, a silhouette comparison can distinguish an oversized outline from a dark underside that merges with the supports; a neutral-material render then helps locate the contribution of surface color. Neither view alone establishes full visual fidelity.
 
 ## Competing mechanisms and regional treatment
