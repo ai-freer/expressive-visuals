@@ -4,22 +4,36 @@
 
 A heuristic creative skill for work whose value is primarily visual: web pages, interactive pieces, 3D scenes and models, images, video, and animation.
 
-It prompts across content, form, and viewing. Start from the values, worldview, relationships, and *yijing* (意境, the lingering mood a work evokes) in the source material or concept; find an entry point and axes of change; then consider visual language, shape and space, light and atmosphere, camera, attention, the viewer's relationship to the work, and how experience unfolds over time. Finally, land the judgment in visible results. Reference study and viewing the actual work can also deepen understanding.
+It prompts across content, form, and viewing. Start from the values, worldview, relationships, and *yijing* (意境, the lingering mood a work evokes) in the source material or concept; find an entry point and axes of change; then consider visual language, shape and space, light and atmosphere, camera, attention, the viewer’s relationship to the work, and how experience unfolds over time. Finally, land the judgment in visible results. Reference study and viewing the actual work can also deepen understanding.
 
-These open prompts widen creative choices. Use them as the task requires; there is no need to answer each one, cover them all, or submit a separate analysis document. They preserve the model's own understanding and creative judgment and do not prescribe a single style or model-specific method.
+These open prompts widen creative choices. Use them as the task requires; there is no need to answer each one, cover them all, or submit a separate analysis document. They preserve the model’s own understanding and creative judgment and do not prescribe a single style or model-specific method.
 
-[SKILL.md](SKILL.md) explains when to use each 3D guide. Use [3D Reconstruction from Concept Art](references/concept-to-3d.md) to identify what an approved image requires or why a render misses it. Use [Code-driven 3D](references/code-driven-3d.md) to model a subject or compose an original scene, including a one-off form or a still. Three.js is the main tool for this route. Read both when using code to build or correct a model or scene against an approved image.
+## Choosing a 3D guide
 
-The code guide shows how to keep parts connected as dimensions change, combine generated and authored assets under the same light, and let the intended view determine which details need modeling. For moving work, it also shows how to tie visible feedback to the moment and place of contact.
+For a poster, typographic page, or film, start with the [creative prompts](SKILL.md#prompts-to-revisit-while-creating). Choose a guide below when its question is open; each stands on its own.
+
+| Start with | Use it on its own when… |
+|---|---|
+| [3D Reconstruction from Concept Art](references/concept-to-3d.md) | You need to plan a reconstruction from approved art or diagnose a mismatch after rendering. Use the chosen tool, including Blender. |
+| [Code-driven 3D](references/code-driven-3d.md) | You want to shape a subject, light it, or compose an original scene through code. Three.js is the main tool; the result can be a still. Browser delivery and its costs are covered here too. |
+| [Code-driven 3D Interaction](references/code-driven-3d-interaction.md) | You need to discover what an action lets a viewer perceive or change. A placeholder or an existing model works; the same reasoning can serve a 2D page. |
+
+For a model built in code to match approved art, combine **reconstruction and modeling**. For an original interactive mechanism, use **modeling and interaction**. If an existing scene already has its assets and needs a reveal that starts from an approved frame, use **reconstruction and interaction**. Use all three when the brief calls for fidelity to approved art, building the scene in code, and a meaningful viewer action. [SKILL.md](SKILL.md#choosing-a-3d-approach) gives a worked choice for each combination.
 
 ## Evaluating transfer
 
-Cross-style transfer remains unproven. An informative trial uses an unfamiliar concept with different visual traits and supplies only the goal, viewing conditions, and necessary constraints, without route hints. Before implementation, the agent identifies the key visual trait and candidate explanations with different predictions. The evidence is a rendered study that captures the trait, a comparison exposing the method's limits, and a supported decision to retain, revise, or replace the approach. Retaining the original approach is valid when the comparison supports it. Choosing the right problem without user correction matters as much as the final image; a trial in which the user supplies the key diagnosis or route is guided. One result establishes performance on that case, not general capability.
+**Reconstruction across styles.** Cross-style transfer remains unproven. An informative trial uses an unfamiliar concept with different visual traits and supplies only the goal, viewing conditions, and necessary constraints, without route hints. Before implementation, the agent identifies the key visual trait and candidate explanations with different predictions. The evidence is a rendered study that captures the trait, a comparison exposing the method’s limits, and a supported decision to retain, revise, or replace the approach. Retaining the original approach is valid when the comparison supports it. Choosing the right problem without user correction matters as much as the final image; a trial in which the user supplies the key diagnosis or route is guided. One result establishes performance on that case, not general capability.
+
+**Original modeling.** Give the maker a concrete second edit: widen an arch while preserving the adjoining bays and the intended view. Compare what changed, what broke, and how much rework was needed.
+
+**Interaction.** Give a new viewer the piece without a walkthrough. Observe whether they discover the control, perceive its response, and can reproduce the consequence. A replay checks the rule; it cannot tell you what the viewer understood. The interaction guide has not been tested in a production trial.
+
+These are proposed evaluations. To attribute an improvement to the skill, compare the same brief, tools, model, and budget with and without it; keep user assistance comparable and record it.
 
 ## Usage
 
 Install this repository as the `expressive-visuals` skill directory in any client that supports `SKILL.md`. In clients that support invocation by name, use `$expressive-visuals`. Discovery and loading depend on the client.
 
-Current version: 1.6.0.
+Current version: 1.7.0.
 
 License: [MIT](LICENSE).

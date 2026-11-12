@@ -1,0 +1,34 @@
+# Code-driven 3D Interaction
+
+Use this guide when something becomes understandable, surprising, or felt **because the viewer acts**. A reader might turn a crank to discover why a mechanism pauses, choose a path to see what a hillside concealed, or hear a response that tells them their timing mattered. Each calls for a different relationship between action and consequence. A single control can be enough.
+
+Start with the smallest thing the viewer can affect: a block, a diagram, or a part in a finished model. For a 2D page, the same action may work with an HTML control and a drawing. If its shape or pivot needs work, see [Code-driven 3D](code-driven-3d.md); if the opening view must match approved art, use [3D Reconstruction from Concept Art](concept-to-3d.md) to check that view. Three.js can stage the interaction inside an ordinary HTML page. Use depth where position, occlusion, or contact carries meaning; a caption, button, or diagram can do the rest.
+
+## What code contributes to the experience
+
+| Case and observed mechanism | A decision to carry into another piece |
+|---|---|
+| In [The Clockmaker’s Heart](https://claude.ai/artifact/6MjtQjf4ee1ZZjEpafaEpa), individual mechanical parts have anchors and inspection views. A viewer moves from the figure to the part that needs attention. | In a web exhibit, attach the detail view to the component. Keep a recognizable neighbor in frame so a close-up also explains *where this belongs*. Move the component in a revision and see whether the view still works. |
+| In [Tidewright](https://claude.ai/artifact/JTgyEMn7sn1q2riWrMb7D4), the rendered sea and the boat’s motion use corresponding wave calculations. The work uses custom WebGL2. | Share the physical quantity that matters. An interactive tide diagram could derive the waterline and a float’s height from the same tide control. Scrub backward or stop: their relationship should still hold. The idea transfers without adopting the renderer. |
+| In [Saltline](https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp), cutting a relay makes its beacon flicker out, advances the objective count, and, on the last relay, changes the instruction to extraction. These connections are visible in the embedded legacy build. | In an annotated model, let the set of inspected parts drive both the marks on the model and the overview. Reopening a part should show its detail again without counting it twice. |
+| In [Guizang’s 雾锁山门](https://github.com/op7418/guizang-game-skill/tree/21683d9e00bd3736efe52f78d8380debbd2af3d3), a successful parry changes stamina and triggers sound, flash, and camera response in the same decision. The parry sound layers pitched samples with a synthesized tone; the author also describes solving limb positions for custom moves on a rig. | Code can shape a response as well as time it. In a virtual instrument, a finger crossing a string during a strum could excite a vibration whose strength follows the stroke. Touch and pointer input can both express the crossing. |
+
+Three different jobs recur: **generate** what can be described economically, **coordinate** things that must agree, and **stage** what the viewer notices. A work can benefit from any one of them. An entirely hand-modeled instrument can still owe its expressiveness to the timing of its response. A procedurally generated instrument can still be a better still than an interaction.
+
+## Make one consequential action
+
+Consider a web page about a cam that lifts a follower. The profile is easy to see in a drawing; what is harder to see is how the follower can remain still while the shaft continues to turn. Give the reader just the crank. For this example, use a pointed follower moving along a line through the shaft center: its tip meets the rotated outline on that line. Mark a constant-radius arc centered on the shaft. While that arc passes the tip, the mark moves but the follower stays still. A roller or flat-faced follower has a different contact geometry; do not place its center or face by this same radius rule.
+
+Make the handle recognizable and give it a generous hit area. Viewed face-on, dragging around the pivot can turn the crank by the change in pointer angle; crossing the angle wrap should not reverse a whole turn. Ignore jitter very near the pivot. Once the handle has the drag, let it keep it until release or cancellation so orbit controls cannot steal the motion. For a touch exhibit, test a thumb at the displayed size; for keyboard use, a focusable pair of turn controls can change the same angle. With reduced motion, keep the positional change that explains the mechanism and omit automatic spins or camera sweeps.
+
+Watch a first-time reader before offering instructions. Did they **find the handle**, **notice the response**, and **discover the pause**? Those failures call for different edits. A shaft index mark can distinguish a real dwell from a frozen page; a bigger hit area cannot. Measure time to the first effective input if it feels unresponsive. Then extend the constant-radius arc: its mark and angular span of dwell should change together, and the tip should stay in contact. If a labeled drawing communicates the relationship just as well, keep the drawing.
+
+## Try the action between its endpoints
+
+Stop halfway through a rowing stroke. The oar should stay in the rower’s hand while a ripple already on the water continues to spread. Reverse the stroke, or leave the tab and return: does the piece resume where the viewer expects, or does the boat jump? These moments distinguish effects that follow the current pose from effects that continue after an event.
+
+For a timing-sensitive interaction, give a developer a repeatable starting state and a way to inject input and advance a known number of simulation steps. Guizang’s published build exposes these operations through `window.G.press` and `window.G.step`, and accepts `?stage=boss` to select a starting situation. A crank exhibit may need only a saved start angle and a recorded sequence of pointer positions. Replay a reversal across the dwell boundary and compare the shaft angle, contact, and visible response with the same moment on the previous run.
+
+For a real-time game, replay the same timed inputs at two render rates. If collisions change, try a fixed simulation step with a cap on elapsed time and catch-up work. Clear held inputs on focus loss; if simulation pauses on tab hide, reset the time accumulator on return. Where first-person look or audio depends on a user gesture, test entering and regaining control, and listen for missing or doubled sound. A simple exhibit may need only a redraw when the angle changes.
+
+Replay checks the rule. Operating the piece on the intended device checks timing and feel. Watching someone encounter it for the first time tells you what they actually notice. One cannot stand in for the others.

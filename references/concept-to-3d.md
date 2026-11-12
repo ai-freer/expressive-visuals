@@ -2,7 +2,7 @@
 
 ## The target and its viewing conditions
 
-The currently approved concept, existing style definitions, and latest render establish the target and the remaining discrepancy. Later approved revisions can supersede parts of an image without replacing its other decisions. Style names alone are too broad: silhouette, mark direction, edge quality, value grouping, and material response explain what makes this particular image distinctive.
+Before a first render, use the approved concept and any existing style definitions to identify the relationships the target view must preserve. When a render exists, compare it with that target to locate the remaining discrepancy. Later approved revisions can supersede parts of an image without replacing its other decisions. Style names alone are too broad: silhouette, mark direction, edge quality, value grouping, and material response explain what makes this particular image distinctive.
 
 Viewing conditions determine what a convincing reconstruction must preserve. A fixed illustration, an orbitable asset, and a playable scene expose different failures. A single image constrains visible relationships but does not establish hidden surfaces or depth uniquely. A concept may also bend perspective, proportion, or construction to serve composition. Such deviations can be effective in a fixed view; moving cameras expose their spatial costs. The useful choice is which image relationships to preserve, which spatial inconsistencies to resolve, and where the intended viewing range permits approximation.
 
@@ -16,11 +16,11 @@ Patterns of landmark error help locate a cause, without proving it. Similar disp
 
 ## Editable structure and visual readability
 
-Measured relationships become editable constraints through parameters that can explain them. A landmark pair may constrain a projected span, while an occlusion boundary constrains which part appears in front. Separating observations from inferred dimensions keeps camera and geometry hypotheses revisable. Shared guides help related parts retain connections, support, and alignment as they change. Dependencies still matter: increasing a beam's thickness can close a formerly valid clearance, and changing a curved path can make repeated parts intersect. Real construction references help explain unfamiliar joints without overriding intentional stylization in the concept.
-
-When code is a candidate for the reconstruction, [Code-driven 3D](code-driven-3d.md) explores how to turn observed contours, volumes, and spatial relationships into editable geometry, materials, and light.
+Measured relationships become editable constraints through parameters that can explain them. A landmark pair may constrain a projected span, while an occlusion boundary constrains which part appears in front. Separating observations from inferred dimensions keeps camera and geometry hypotheses revisable. Carry those constraints across neighboring parts: thickening a beam can close the clearance beneath the eaves even if its upper edge now matches the drawing. Check both the projected gap and the physical clearance in the working model. Real construction references help explain unfamiliar joints without overriding intentional stylization in the concept.
 
 Physical connection and visual readability are separate claims. Geometry inspection can establish contact; the target view establishes apparent scale, depth, and separation. A connected joint can disappear into shadow, while a projected overlap can conceal a disconnected support. For example, if a roof seems too heavy, a silhouette comparison can distinguish an oversized outline from a dark underside that merges with the supports; a neutral-material render then helps locate the contribution of surface color. Neither view alone establishes full visual fidelity.
+
+If the roof needs reshaping, [Code-driven 3D](code-driven-3d.md) covers how to build and revise its form in code. If the roof already matches but viewers need to discover the joint beneath the eaves, [Code-driven 3D Interaction](code-driven-3d-interaction.md) helps design the action that reveals it.
 
 ## Competing mechanisms and regional treatment
 
