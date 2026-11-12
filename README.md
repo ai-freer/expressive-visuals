@@ -14,11 +14,11 @@ For a poster, typographic page, or film, start with the [creative prompts](SKILL
 
 | Start with | Use it on its own when… |
 |---|---|
-| [3D Reconstruction from Concept Art](references/concept-to-3d.md) | You need to plan a reconstruction from approved art or diagnose a mismatch after rendering. Use the chosen tool, including Blender. |
+| [3D Reconstruction: Concept Art and Real-World Sources](references/concept-to-3d.md) | Plan a reconstruction or diagnose a mismatch. For a real product, building, or landmark, search online for primary records to establish dimensions and layout; approved art, when available, guides the target view. Use the chosen tool, including Blender. |
 | [Code-driven 3D](references/code-driven-3d.md) | You want to shape a subject, light it, or compose an original scene through code. Three.js is the main tool; the result can be a still. Browser delivery and its costs are covered here too. |
 | [Code-driven 3D Interaction](references/code-driven-3d-interaction.md) | You need to discover what an action lets a viewer perceive or change. A placeholder or an existing model works; the same reasoning can serve a 2D page. |
 
-For a model built in code to match approved art, combine **reconstruction and modeling**. For an original interactive mechanism, use **modeling and interaction**. If an existing scene already has its assets and needs a reveal that starts from an approved frame, use **reconstruction and interaction**. Use all three when the brief calls for fidelity to approved art, building the scene in code, and a meaningful viewer action. [SKILL.md](SKILL.md#choosing-a-3d-approach) gives a worked choice for each combination.
+For a model built in code to match approved art or a documented subject, combine **reconstruction and modeling**. For an original interactive mechanism, use **modeling and interaction**. If an existing scene already has its assets and needs a reveal that starts from an approved frame, use **reconstruction and interaction**. For a walkable landmark built in code, all three can help: recover the site layout from surveys, build the terrain, and test what the visitor discovers along the route. [SKILL.md](SKILL.md#choosing-a-3d-approach) gives a worked choice for each combination.
 
 ## Evaluating transfer
 
@@ -34,6 +34,6 @@ These are proposed evaluations. To attribute an improvement to the skill, compar
 
 Install this repository as the `expressive-visuals` skill directory in any client that supports `SKILL.md`. In clients that support invocation by name, use `$expressive-visuals`. Discovery and loading depend on the client.
 
-Current version: 1.7.0.
+Current version: 1.7.1.
 
 License: [MIT](LICENSE).

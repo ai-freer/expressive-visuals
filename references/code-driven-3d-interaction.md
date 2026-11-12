@@ -2,7 +2,7 @@
 
 Use this guide when something becomes understandable, surprising, or felt **because the viewer acts**. A reader might turn a crank to discover why a mechanism pauses, choose a path to see what a hillside concealed, or hear a response that tells them their timing mattered. Each calls for a different relationship between action and consequence. A single control can be enough.
 
-Start with the smallest thing the viewer can affect: a block, a diagram, or a part in a finished model. For a 2D page, the same action may work with an HTML control and a drawing. If its shape or pivot needs work, see [Code-driven 3D](code-driven-3d.md); if the opening view must match approved art, use [3D Reconstruction from Concept Art](concept-to-3d.md) to check that view. Three.js can stage the interaction inside an ordinary HTML page. Use depth where position, occlusion, or contact carries meaning; a caption, button, or diagram can do the rest.
+Start with the smallest thing the viewer can affect: a block, a diagram, or a part in a finished model. For a 2D page, the same action may work with an HTML control and a drawing. If its shape or pivot needs work, see [Code-driven 3D](code-driven-3d.md); if the experience depends on matching an approved view or a real site, use the [reconstruction guide](concept-to-3d.md) to establish what must hold as the viewer moves. Three.js can stage the interaction inside an ordinary HTML page. Use depth where position, occlusion, or contact carries meaning; a caption, button, or diagram can do the rest.
 
 ## What code contributes to the experience
 

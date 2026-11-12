@@ -1,8 +1,8 @@
 ---
 name: expressive-visuals
-description: Creative guidance for work whose value is primarily visual and experiential, including web pages, interactive pieces, 3D scenes and models, images, video, and animation. Use when conceiving, making, improving, or reviewing such work from source material, references, or concepts, and when rebuilding 3D assets or scenes from approved concept art or diagnosing why a render does not match it. Also covers modeling individual 3D forms, reconstructing scenes, and building original worlds through code, with Three.js as the main modeling and staging tool. For interactive 3D work, use it to design what a viewer can discover or change and how the scene responds. Usually unnecessary for routine UI maintenance or purely technical fixes.
+description: Creative guidance for work whose value is primarily visual and experiential, including web pages, interactive pieces, 3D scenes and models, images, video, and animation. Use when conceiving, making, improving, or reviewing such work from source material, references, or concepts, and when reconstructing real products, buildings, or landmarks from documented sources, rebuilding scenes from approved concept art, or diagnosing a visual mismatch. Also covers modeling individual 3D forms, reconstructing scenes, and building original worlds through code, with Three.js as the main modeling and staging tool. For interactive 3D work, use it to design what a viewer can discover or change and how the scene responds. Usually unnecessary for routine UI maintenance or purely technical fixes.
 metadata:
-  version: "1.7.0"
+  version: "1.7.1"
 ---
 
 # Expressive Visuals
@@ -11,9 +11,9 @@ Aim to make the work a perceptible, understandable experience with lingering res
 
 ## Choosing a 3D approach
 
-For questions of layout, rhythm, or atmosphere in a poster, page, or film, start with the [creative prompts](#prompts-to-revisit-while-creating). Use a 3D guide when the open question concerns fidelity to an image in 3D, building a form or scene, or what a viewer discovers by acting. The interaction examples also apply to 2D when the same action works on a page. Each guide can be used on its own.
+For questions of layout, rhythm, or atmosphere in a poster, page, or film, start with the [creative prompts](#prompts-to-revisit-while-creating). Use a 3D guide when the open question concerns fidelity to a depicted or real subject, building a form or scene, or what a viewer discovers by acting. The interaction examples also apply to 2D when the same action works on a page. Each guide can be used on its own.
 
-- **What must match the approved image?** [3D Reconstruction from Concept Art](references/concept-to-3d.md) helps plan a reconstruction before the first render or diagnose a later mismatch in framing, proportion, occlusion, or light. Use it in the chosen tool, including Blender. An image offered only as inspiration leaves these decisions open.
+- **What must the reconstruction match?** [3D Reconstruction: Concept Art and Real-World Sources](references/concept-to-3d.md) helps plan a reconstruction before the first render or diagnose a later mismatch in framing, proportion, occlusion, or light. For an identifiable product, building, or landmark, search online for primary sources before fixing dimensions or spatial relationships, whether or not concept art exists. Use the guide in the chosen tool, including Blender. An image offered only as inspiration leaves the composition open.
 - **How should the form or scene be built?** [Code-driven 3D](references/code-driven-3d.md) covers editable geometry, materials, light, and composition, with Three.js as the main tool. An original vase made for a single still can stop here. For a browser scene, this guide also covers what to ship and measure, even without interaction.
 - **What will the viewer discover by acting?** [Code-driven 3D Interaction](references/code-driven-3d-interaction.md) connects a viewer’s action to a change they can see or hear. Try an action with a placeholder or an existing model: can turning a crank reveal something that the still image conceals? This applies to web exhibits, narrative pieces, and games.
 
@@ -24,11 +24,11 @@ Combine guides where the work crosses those boundaries:
 | Reconstruct a vase in code from an approved image. | **Reconstruction + modeling:** identify the rim and shoulder the image constrains, shape them, then compare the same view. |
 | Design an original mechanism the reader can operate. | **Modeling + interaction:** define the parts and pivots, then use their motion to show what the reader’s turn of the crank does. |
 | Add exploration to an existing scene whose opening must match the concept. | **Reconstruction + interaction:** check the approved opening view; try the reveal and the return. Add modeling if the geometry itself needs work. |
-| Build an explorable place in code from approved art. | **All three:** identify what the opening must preserve, build the space, then walk the route to judge what becomes visible, when, and why. Matching the opening frame does not establish that the route works or the reveal reads. |
+| Build a walkable landmark in code from survey data. | **All three:** establish the ridge and lookout positions from the survey, build the terrain, then walk the route to judge when the summit comes into view. Correct elevations alone do not establish that the reveal works. |
 
 Let the hardest part of the brief guide the next step. A face that must deform convincingly may benefit from an authored rig; a particular brush mark may be easiest to keep as painted; a still that depends on multiple light bounces may merit an offline render. If the handoff requires an editable Blender scene, plan for that source from the outset. Any of these choices can apply to one part of a larger Three.js work.
 
-Choose evidence to fit the question: compare the intended view with the approved image, try a second edit to see which relationships hold, or watch a first-time viewer discover and repeat the action. A replay can verify the response without establishing that anyone understood it.
+Choose evidence to fit the question: check the model against documented dimensions or compare the intended view with approved art, try a second edit to see which relationships hold, or watch a first-time viewer discover and repeat the action. A replay can verify the response without establishing that anyone understood it.
 
 ## Working definitions
 
